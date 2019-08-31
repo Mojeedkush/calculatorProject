@@ -3,6 +3,58 @@
     width: 22.5%;
 }
 
+@media (max-width: 320px) {
+    .main {
+        width: 100%;    
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .main {
+        width: 84.8%;    
+    }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .main {
+        width: 74%;    
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .main {
+        width: 40.4%;    
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .main {
+        width: 30.2%;    
+    }
+
+    .screen {
+        height: 9vh;
+        font-size: 200px;
+        color: black;
+        background-color: yellow;
+    }
+
+}
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+    .main {
+        width: 21.3%;    
+    }
+
+}
+
+@media (min-width: 1441px) {
+    .main {
+        width: 12%;    
+    }
+}
+
+
 .screen {
     height: 15vh;
     background-color: blue;
