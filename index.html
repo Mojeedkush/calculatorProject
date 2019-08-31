@@ -12,7 +12,7 @@
     <div class="main">
         <h1>A Simple Calculator</h1>
         <div class="screen">
-            <div class="values" id="values">100000</div>
+            <div class="values" id="values"></div>
             <!-- <div class="answer">50</div> -->
         </div>
         <table>
@@ -20,7 +20,7 @@
                 <td class="button" onclick="displayContent('c')">c</td>
                 <td class="button" onclick="displayContent('/')">/</td>
                 <td class="button" onclick="displayContent('*')">x</td>
-                <td class="button">del</td>
+                <td class="button" onclick="displayContent('del')">del</td>
             </tr>
             <tr>
                 <td class="button" onclick="displayContent(7)">7</td>
@@ -38,12 +38,12 @@
                 <td class="button" onclick="displayContent(1)">1</td>
                 <td class="button" onclick="displayContent(2)">2</td>
                 <td class="button" onclick="displayContent(3)">3</td>
-                <td class="button" onclick="displayContent('()')">()</td>
+                <td class="button" onclick="displayContent('%')">%</td>
             </tr>
             <tr>
                     <td class="button" onclick="displayContent(0)" colspan="2">0</td>
                     <td class="button" onclick="displayContent('.')">.</td>
-                    <td class="button">=</td>
+                    <td class="button" onclick="displayContent('=')">=</td>
             </tr>
         </table>
     </div>

@@ -31,8 +31,8 @@ function displayContent (input) {
     else if (input == 9) {
         values.innerHTML += "9";
     }
-    else if (input == c) {
-        values.innerHTML += "";
+    else if (input == 'c') {
+        values.innerHTML = "";
     }
     else if (input == '/') {
         values.innerHTML += "/";
@@ -43,8 +43,30 @@ function displayContent (input) {
     else if (input == '*') {
         values.innerHTML += "*";
     }
-    else if (input == '()') {
-        values.innerHTML += "()";
+    else if (input == '%') {
+        values.innerHTML += "%";
+    }
+    else if (input == '.') {
+        values.innerHTML += ".";
+    }
+    else if (input == '-') {
+        values.innerHTML += "-";
+    }
+    else if (input == '=') {
+        solve();
+    }
+    else if (input == 'del') {
+        remove();
     }
     
+}
+
+function solve () {
+    let solution = eval(values.innerHTML);
+    values.innerHTML = solution;
+}
+
+function remove () {
+    let remainingDigits = values.innerHTML.slice(0,values.innerHTML.length-1);
+    values.innerHTML = remainingDigits;
 }
