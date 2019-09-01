@@ -43,7 +43,7 @@
 
 @media (max-width: 1440px) and (min-width: 1025px) {
     .main {
-        width: 21.3%;    
+        width: 22.5%;    
     }
 
 }
@@ -61,17 +61,11 @@
     color: white;
     font-size: 80px;
     overflow-x: auto;
-    /* position: relative; */
 }
 
 .screen > .values {
 text-align: right;
 }
-
-/* .display > .answer {
-    text-align: right;
-    color: yellow;
-} */
 
 .button {
 

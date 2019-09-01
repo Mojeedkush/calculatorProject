@@ -10,15 +10,17 @@
 </head>
 <body>
     <div class="main">
-        <h1>A Simple Calculator</h1>
-        <div class="screen">
-            <div class="values" id="values"></div>
-            <!-- <div class="answer">50</div> -->
-        </div>
         <table>
             <tr>
-                <td class="button" onclick="displayContent('c')">c</td>
-                <td class="button" onclick="displayContent('/')">/</td>
+                <h1>A Simple Calculator</h1>
+                <div class="screen">
+                    <div class="values" id="values">0</div>
+                    <!-- <div class="answer">50</div> -->
+                </div>
+            </tr>
+            <tr>
+                <td class="button red" onclick="displayContent('c')" colspan="2">c</td>
+                <!-- <td class="button" onclick="displayContent('/')">/</td> -->
                 <td class="button" onclick="displayContent('*')">x</td>
                 <td class="button" onclick="displayContent('del')">del</td>
             </tr>
@@ -38,12 +40,12 @@
                 <td class="button" onclick="displayContent(1)">1</td>
                 <td class="button" onclick="displayContent(2)">2</td>
                 <td class="button" onclick="displayContent(3)">3</td>
-                <td class="button" onclick="displayContent('%')">%</td>
+                <td class="button" onclick="displayContent('/')">/</td>
             </tr>
             <tr>
-                    <td class="button" onclick="displayContent(0)" colspan="2">0</td>
+                    <td class="button green" onclick="displayContent('=')" colspan="2">=</td>
                     <td class="button" onclick="displayContent('.')">.</td>
-                    <td class="button" onclick="displayContent('=')">=</td>
+                    <td class="button" onclick="displayContent(0)">0</td>
             </tr>
         </table>
     </div>
